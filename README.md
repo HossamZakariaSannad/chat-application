@@ -141,5 +141,13 @@ curl -X GET http://localhost:5000/api/conversations -H "Authorization: Bearer <t
 ```bash
 curl -X POST http://localhost:5000/api/conversations -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d '{"participantId":2}'
 ```
+#### Upload File to Conversation
+```bash
+curl -X POST http://localhost:5000/api/messages/upload -H "Authorization: Bearer <your_jwt_token>" -F "file=@/path/to/your/file.jpg" "
+```
+#### Send Message
+```bash
+curl -X POST http://localhost:5000/api/conversations/<id>/messagesa -H "Authorization: Bearer <your_jwt_token>" -H "Content-Type: application/json" -d '{"conversationId":1,"content":"Hello, this is a test message!"}'
+```
 
 

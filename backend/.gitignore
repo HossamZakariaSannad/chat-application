@@ -1,0 +1,4 @@
+"node_modules\n.env\nprisma/migrations\nuploads" 
+
+/generated/prisma
+"/uploads" 

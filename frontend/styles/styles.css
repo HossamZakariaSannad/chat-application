@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inbox-container {
+  padding: 10px;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+.inbox-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.start-chat-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-chat-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.no-conversations {
+  color: #666;
+  font-size: 14px;
+}
+
+.conversation-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.conversation-card:hover {
+  background-color: #f0f0f0;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.last-message {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* User-specific colored borders */
+.conversation-card:nth-child(1) { border-left: 4px solid #007bff; }
+.conversation-card:nth-child(2) { border-left: 4px solid #28a745; }
+.conversation-card:nth-child(3) { border-left: 4px solid #6f42c1; }
+.conversation-card:nth-child(4) { border-left: 4px solid #dc3545; }
+.conversation-card:nth-child(5) { border-left: 4px solid #ffc107; }
+.conversation-card:nth-child(6) { border-left: 4px solid #17a2b8; }
